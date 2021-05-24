@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <p>This is a direct child</p>
+    <p>This is another direct child</p>
+    <span>
+      <p>This is not a direct child</p>
+    </span>
+   </div>
+   <p>This is the first sibling</p>
+   <p>This is the second sibling</p>
+   <style>
+     .container {
+       border: 2px solid black;
+     }
+     .container p {
+       color: red;
+     }
+     .container > p {
+       color: blue;
+     }
+     .container + p {
+       color: orange;
+     }
+     .container ~ p {
+       color: brown;
+     }
+   </style>
+
+</body>
+</html>
